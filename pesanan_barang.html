@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Barang</title>
+    <style>
+        body {
+            margin: 0 20%;
+            margin-top: 1rem;
+            padding: 2%;
+            padding-top: 0;
+            border: 1px solid black;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        li {
+            border-right: 1px solid black;
+            padding-right: 20px;
+        }
+
+        li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .gambar {
+            border: 1px solid black;
+            width: 250px;
+            height: 200px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUl4ZDgB0aAaD26sLNmPumSABj9CtNpuO9w&s);
+            background-position: center;
+            background-size: cover;
+        }
+        input {
+            width: 300px;
+        }
+        button {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Generate Link</a>
+            </li>
+            <li>
+                <a href="#">Transaction History</a>
+            </li>
+            <li>
+                <a href="#">Policy</a>
+            </li>
+            <li style="border: none;">
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <form action="#" enctype="multipart/form-data">
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <div class="gambar">
+                    </div>
+                    <div>
+                        <button>Upload Picture</button>
+                    </div>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Title Here :</label>
+                            </td>
+                            <td>
+                                <input type="text" name="title" value="MacBook Air E800">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <label>Description :</label>
+                            </td>
+                            <td>
+                                <textarea name="desc" cols="39" rows="5">Year : 2009
+
+    Model :
+
+    Condition : Mint
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Account Number :</label>
+                            </td>
+                            <td>
+                                <input type="text" name="number" value="123-456-789-0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Bank :</label>
+                            </td>
+                            <td>
+                                <select name="bank">
+                                    <option value="HSBC">HSBC</option>
+                                    <option value="BNI">BNI</option>
+                                    <option value="BCA">BCA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Account Holder :</label>
+                            </td>
+                            <td>
+                                <input type="text" name="holder" placeholder="Name Here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <label>Transaction :</label>
+                            </td>
+                            <td style="vertical-align: top;">
+                                <input type="number" name="transaction" value="1" min="1" max="3" style="width: 2rem;" >
+                                <br>
+                                <small>* if the transaction is for 3 person, choose 3 from the drop-down list</small>
+                                <br>
+                                <input type="checkbox" name="mobile" id="mob" style="width: 1rem;" checked>
+                                <label for="mob" style="color: green;">Send to Mobile Phone</label>
+                                <br>
+                                <input type="checkbox" name="email" id="ema" style="width: 1rem;" checked>
+                                <label for="ema" style="color: green;">Send to Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Send to Mobile Phone :</label>
+                            </td>
+                            <td>
+                                <input type="text" name="senmob" value="1234567890, 1234567891">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Send to Email :</label>
+                            </td>
+                            <td>
+                                <input type="text" name="senema" value="mfmm2g13@soton.acuk, fys_06@yahoo.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button style="margin-top: 30px; background-color: green; color: white; padding: 5px 1rem;">Generate Nabr Link</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
